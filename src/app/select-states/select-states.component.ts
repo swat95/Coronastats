@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { States } from '../states';
 import { StatesService } from '../states.service';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
-import { Dates } from '../dates';
 
 @Component({
   selector: 'app-select-states',
@@ -16,10 +15,8 @@ export class SelectStatesComponent implements OnInit {
   ) { }
 
   lstStates: States[] = [];
-  lstDates: Dates[] = [];
   timeframe: number = 1 * 7;
-  public stateSelected: any;
-  chart: any;
+  public stateSelected!: number;
 
   ngOnInit(): void {
 

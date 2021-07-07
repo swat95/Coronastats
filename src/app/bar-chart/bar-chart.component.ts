@@ -2,7 +2,7 @@ import { AfterViewInit, Component } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { StatesService } from '../states.service';
-import * as Chart from 'chart.js';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-bar-chart',
@@ -102,7 +102,8 @@ export class BarChartComponent implements AfterViewInit {
             label: label,
             data: reqstatarr,
             backgroundColor: "#2a4b7c",
-            hoverBackgroundColor: "#2a7c1b"
+            hoverBackgroundColor: "#2a7c1b",
+            barThickness:30,
           }
         ],
       },
