@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { SelectStatesComponent } from './select-states/select-states.component';
 import { StatesService } from './states.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { RadioTimeframeComponent } from './radio-timeframe/radio-timeframe.component';
 import { MatRadioModule } from '@angular/material/radio';
@@ -29,7 +28,6 @@ import { MatRadioModule } from '@angular/material/radio';
     MatCardModule,
     FormsModule,
     HttpClientModule,
-    ChartsModule,
     MatRadioModule
   ],
   providers: [StatesService,
